@@ -1,9 +1,6 @@
 import os
-from flask import Flask, request, redirect, url_for, send_from_directory, render_template
-from keras.preprocessing.image import ImageDataGenerator
-from keras.models import Sequential, load_model
+from flask import Flask, request, send_from_directory, render_template
 from werkzeug.utils import secure_filename
-import numpy as np
 import pickle
 import cv2
 from skimage import feature as ft
